@@ -20,5 +20,7 @@ from testlab import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.hello),
-    path('page1',views.page1)
+    path('page1',views.page1),
+    path('createform',views.createform),
+    path('addForm',views.addblog)
 ]

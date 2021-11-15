@@ -12,3 +12,11 @@ def hello(request):
 
 def page1(request):
     return render(request,'page1.html')
+
+def createform(request):
+    return render(request,'form.html')
+
+def addblog(request):
+    name=request.POST['name']
+    description=request.POST['description']
+    return render(request,'result.html',{'name':name,'description':description})
