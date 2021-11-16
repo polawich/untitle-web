@@ -85,16 +85,6 @@ WSGI_APPLICATION = 'shortener_project.wsgi.application'
 # }
 
 DATABASES = {
-<<<<<<< HEAD
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoDB',
-        'USER': 'root',
-        'PASSWORD': 'admin',
-        'HOST': '192.168.15.180',
-        'PORT': '3306',
-    }
-=======
         'default': {
             'ENGINE': 'djongo',
             'NAME': 'djangoDB',
@@ -103,7 +93,6 @@ DATABASES = {
                 'host': 'mongodb+srv://polawich:XJdCU2Nci8Iyzzyc@lazy2usedb1.pqkay.mongodb.net/test'
             }  
         }
->>>>>>> d2a1e56b34c3aede7e5ddb3407b8129f497d0a5c
 }
 
 # Password validation
