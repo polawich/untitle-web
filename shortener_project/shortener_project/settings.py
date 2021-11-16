@@ -74,7 +74,18 @@ WSGI_APPLICATION = 'shortener_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'djangoDB',
+#         'USER': 'root',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
+<<<<<<< HEAD
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'djangoDB',
@@ -83,8 +94,17 @@ DATABASES = {
         'HOST': '192.168.15.180',
         'PORT': '3306',
     }
+=======
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'djangoDB',
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'mongodb+srv://polawich:XJdCU2Nci8Iyzzyc@lazy2usedb1.pqkay.mongodb.net/test'
+            }  
+        }
+>>>>>>> d2a1e56b34c3aede7e5ddb3407b8129f497d0a5c
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
